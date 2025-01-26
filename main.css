@@ -1,0 +1,147 @@
+:root{
+    --primary-color: #005a9b;
+    --secondary-color: #f1f1f1;
+    --text-size-sub-title: 22px ; 
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar {
+    position: relative;
+    background: #f1f1f1;
+    font-size: 20px;
+    padding: 0px 30px;
+    z-index: 1000;
+    box-shadow: 1px 1px 10px  rgba(0, 0, 0, 0.747) ;   
+}
+
+
+.box-icono {
+    /* background: rgb(228, 228, 228); */
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.box-icono i {
+    color: #0a7f6a; 
+    font-size: xx-large;
+}
+
+.box-icono p:nth-child(1) {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.box-icono p:nth-child(2) {
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
+
+.portada{
+    height: 400px;
+    font-weight: 300;
+    line-height: 1.25em;
+    letter-spacing: 1px;
+}
+
+.slide_text{
+    background: #212d45;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.747);
+}
+.section {
+    font-weight: 300;
+    line-height: 1.25em;
+    letter-spacing: 1px;
+    /*word-spacing: 0.25em;*/
+    padding: 10px;
+    border: 1px solid #005a9b1f;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 10px auto;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+.section>div>i {
+    font-size: 30px;
+}
+
+.section>ul {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.section>ul>li {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0px;
+}
+
+.section_title {
+    color: #005a9b;
+    font-size: var(--text-size-sub-title);
+    font-weight: bold;
+}
+
+.secction li {
+    font-family: 18px;
+}
+
+.slider_contactanos {
+    position: relative;
+    height: 200px;
+    width: 100%;
+}
+
+.slider_contactanos picture {
+    height: 100%;
+    overflow: hidden;
+    display: block;
+}
+
+.slider_contactanos picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-text {
+    display: grid;
+    place-content: center;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 91, 165, 0.774);
+    width: 100%;
+    height: 100%;
+}
+
+.slider_contactanos .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.text h2 {
+    color: white;
+    font-size: var(--text-size-sub-title);;
+}
+
+.slider_contactanos .text a {
+    background: blue;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    width: fit-content;
+    color: white;
+}
