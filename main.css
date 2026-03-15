@@ -391,6 +391,131 @@ img {
 }
 
 /* ========================================
+   PAQUETES
+   ======================================== */
+
+.paquetes-section {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.paquetes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+    gap: 30px;
+    justify-content: center;
+}
+
+.paquete-card {
+    background: var(--bg-card);
+    border: 1px solid var(--white-05);
+    border-radius: 16px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paquete-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    border: 1px solid transparent;
+    transition: border-color 0.4s ease;
+    pointer-events: none;
+}
+
+.paquete-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.paquete-card:hover::before {
+    border-color: var(--gold);
+}
+
+.paquete-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--blue-deep), rgba(26, 58, 92, 0.3));
+    font-size: 28px;
+    color: var(--gold);
+    transition: all var(--transition);
+}
+
+.paquete-card:hover .paquete-icon {
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.25), rgba(51, 136, 255, 0.15));
+    color: var(--gold-light);
+    box-shadow: 0 0 15px rgba(0, 102, 255, 0.15);
+}
+
+.paquete-title {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 12px;
+}
+
+.paquete-desc {
+    font-size: 14px;
+    color: var(--white-60);
+    line-height: 1.7;
+    margin-bottom: 28px;
+}
+
+.paquete-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 32px;
+    background: var(--gold);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 50px;
+    transition: all var(--transition);
+    margin-bottom: 12px;
+}
+
+.paquete-btn:hover {
+    background: var(--gold-light);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0, 102, 255, 0.3);
+}
+
+.paquete-btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 28px;
+    background: transparent;
+    color: var(--gold);
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 102, 255, 0.3);
+    transition: all var(--transition);
+}
+
+.paquete-btn-secondary:hover {
+    border-color: var(--gold);
+    background: rgba(0, 102, 255, 0.08);
+    transform: translateY(-1px);
+}
+
+/* ========================================
    PROCESO DE TRABAJO
    ======================================== */
 
@@ -1120,6 +1245,10 @@ img {
         margin: 0 auto;
     }
 
+    .paquetes-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
     .proceso-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1182,6 +1311,14 @@ img {
 
     .servicios-grid .servicio-card:nth-child(3) {
         max-width: none;
+    }
+
+    .paquetes-section {
+        padding: 60px 16px;
+    }
+
+    .paquetes-grid {
+        grid-template-columns: 1fr;
     }
 
     .proceso-grid {
