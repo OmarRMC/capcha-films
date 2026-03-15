@@ -1,176 +1,318 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <title>Capcha Films | Producción Audiovisual Profesional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <title>Capcha-Films</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <nav class="navbar h-[80px] flex justify-between items-center px-4">
-        <div>
-            <main class="box-icono">
-                <i class="fa-solid fa-compact-disc"></i>
-                <div class="box-icono-text">
-                    <p>Sphere</p>
-                    <p>CapchaFilms</p>
-                </div>
-            </main>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-logo">
+            <i class="fa-solid fa-compact-disc"></i>
+            <div class="navbar-logo-text">
+                <span class="logo-top">Sphere</span>
+                <span class="logo-bottom">CapchaFilms</span>
+            </div>
         </div>
-        <ul class="flex gap-4">
+        <ul class="navbar-social">
             <li>
-                <a href="https://www.facebook.com/share/1XgUSaqstB/" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-facebook"></i>
+                <a href="https://www.facebook.com/share/1XgUSaqstB/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
                 </a>
             </li>
             <li>
-                <a href="https://www.instagram.com/capcha_drones?igsh=enF0ajQ1ajJ3eXBw" target="_blank"
-                    rel="noopener noreferrer">
+                <a href="https://www.instagram.com/capcha_drones?igsh=enF0ajQ1ajJ3eXBw" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
             </li>
             <li>
-                <a href="https://www.youtube.com/@capcha_drones7" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.youtube.com/@capcha_drones7" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                     <i class="fa-brands fa-youtube"></i>
                 </a>
             </li>
             <li>
-                <a href="https://www.tiktok.com/@capcha_drones" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.tiktok.com/@capcha_drones" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
                     <i class="fa-brands fa-tiktok"></i>
                 </a>
             </li>
         </ul>
     </nav>
-    <!-- <main class="portada relative overflow-hidden">
-        <div class="relative w-full h-full">
-            <img src="portada.webp" class="w-full h-full object-cover" alt="Portada">
-        </div>
-        <div
-            class="slide_text text-white absolute top-0 bg-blue-500 h-full w-8/12 flex justify-center items-center rounded-br-[100px] px-4 flex flex-col gap-4">
-            <div class="px-4 flex flex-col gap-4">
-                <h2 class="text-4xl font-bold" style="font-size: 44px;">
-                    Nuestros Principales <br> Servicios
-                </h2>
-                <p>Descubre nuestra gama de servicios especializados en producción audiovisual de alta calidad. </p>
-            </div>
-        </div>
-    </main> -->
-    <main class="portada-1">
-        <section class="portada-img">
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-images">
             <div class="imagenes">
                 <picture>
-                    <img src="./images/5.webp" alt="">
+                    <img src="./images/5.webp" alt="Producción audiovisual">
                 </picture>
                 <picture>
-                    <img src="./images/3.jpg" alt="">
+                    <img src="./images/3.jpg" alt="Filmación profesional">
                 </picture>
                 <picture>
-                    <img src="./images/cuatro.jpg" alt="">
+                    <img src="./images/cuatro.jpg" alt="Fotografía de eventos">
                 </picture>
                 <picture>
-                    <img src="./images/8.webp" alt="">
+                    <img src="./images/8.webp" alt="Drones cinematográficos">
                 </picture>
-
                 <picture>
-                    <img src="./images/7.webp" alt="">
+                    <img src="./images/7.webp" alt="Producción de video">
                 </picture>
             </div>
-        </section>        
-        <div class="servicios">
-            <div class="px-4 flex flex-col gap-4">
-                <h2 class="servicios_title" style="">
-                    Nuestros </br> Principales Servicios
-                </h2>
-                <p>Descubre nuestra gama de servicios especializados </br> en producción audiovisual de alta calidad. </p>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-on-scroll">
+                Producción Audiovisual<br>
+                <span class="gold">de Alto Impacto</span>
+            </h1>
+            <p class="hero-subtitle animate-on-scroll">
+                Transformamos tus ideas en experiencias visuales inolvidables con calidad cinematográfica profesional.
+            </p>
+            <a href="#servicios" class="hero-cta animate-on-scroll">
+                Conoce Nuestros Servicios
+            </a>
+        </div>
+    </header>
+
+    <!-- Servicios -->
+    <section class="servicios-section" id="servicios">
+        <div class="section-header animate-on-scroll">
+            <span class="section-tag">Lo que hacemos</span>
+            <h2 class="section-title">Nuestros <span class="gold">Servicios</span></h2>
+        </div>
+        <div class="servicios-grid">
+            <!-- Card 1 -->
+            <div class="servicio-card animate-on-scroll">
+                <div class="card-icon">
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+                <h3 class="card-title">Filmación y Fotografía de Eventos</h3>
+                <ul class="card-list">
+                    <li><i class="fa-solid fa-chevron-right"></i> Bodas</li>
+                    <li><i class="fa-solid fa-chevron-right"></i> 15 años</li>
+                    <li><i class="fa-solid fa-chevron-right"></i> Bautizos</li>
+                    <li><i class="fa-solid fa-chevron-right"></i> Aniversarios</li>
+                    <li><i class="fa-solid fa-chevron-right"></i> Conciertos</li>
+                </ul>
+            </div>
+            <!-- Card 2 -->
+            <div class="servicio-card animate-on-scroll">
+                <div class="card-icon">
+                    <i class="fa-solid fa-video"></i>
+                </div>
+                <h3 class="card-title">Producción Audiovisual</h3>
+                <ul class="card-list">
+                    <li><i class="fa-solid fa-chevron-right"></i> Videoclips musicales</li>
+                    <li><i class="fa-solid fa-chevron-right"></i> Contenido para plataformas digitales</li>
+                    <li><i class="fa-solid fa-chevron-right"></i> Documentales</li>
+                    <li><i class="fa-solid fa-chevron-right"></i> Spots publicitarios</li>
+                    <li><i class="fa-solid fa-chevron-right"></i> Videos institucionales</li>
+                    <li><i class="fa-solid fa-chevron-right"></i> Seguimiento a proyectos</li>
+                </ul>
+            </div>
+            <!-- Card 3 -->
+            <div class="servicio-card animate-on-scroll">
+                <div class="card-icon">
+                    <i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <h3 class="card-title">Marketing Digital</h3>
+                <ul class="card-list">
+                    <li><i class="fa-solid fa-chevron-right"></i> Contenido en redes sociales</li>
+                    <li><i class="fa-solid fa-chevron-right"></i> Marketing online</li>
+                    <li><i class="fa-solid fa-chevron-right"></i> Gestión de redes sociales</li>
+                    <li><i class="fa-solid fa-chevron-right"></i> Desarrollo web y aplicaciones</li>
+                </ul>
             </div>
         </div>
-    </main>
-    <section class="section">
-        <div class="flex items-center gap-4 flex-col">
-            <i class="fa-solid fa-camera"></i>
-            <h2 class="section_title">Filmación y Fotografía de Eventos</h2>
-        </div>
-        <ul>
-            <li><i class="fa-solid fa-hand-point-right"></i>Bodas</li>
-            <li><i class="fa-solid fa-hand-point-right"></i> 15 años</li>
-            <li><i class="fa-solid fa-hand-point-right"></i> Bautizos</li>
-            <li><i class="fa-solid fa-hand-point-right"></i> Aniversario</li>
-            <li><i class="fa-solid fa-hand-point-right"></i> Concierto </li>
-        </ul>
     </section>
 
-    <section class="section">
-        <div class="flex items-center gap-4 flex-col">
-            <i class="fa-solid fa-video"></i>
-            <h2 class="section_title">Producción Audiovisual</h2>
+    <!-- Proceso de Trabajo -->
+    <section class="proceso-section" id="proceso">
+        <div class="section-header animate-on-scroll">
+            <span class="section-tag">Cómo trabajamos</span>
+            <h2 class="section-title">Nuestro <span class="gold">Proceso</span></h2>
         </div>
-        <ul>
-            <li><i class="fa-solid fa-hand-point-right"></i> Videoclips musicales </li>
-            <li><i class="fa-solid fa-hand-point-right"></i> Contenidos para plataformas digitales</li>
-            <li><i class="fa-solid fa-hand-point-right"></i> Documentales </li>
-            <li><i class="fa-solid fa-hand-point-right"></i> Spots publicitario </li>
-            <li><i class="fa-solid fa-hand-point-right"></i> Videos institucionales</li>
-            <li><i class="fa-solid fa-hand-point-right"></i> Seguimientos a proyectos</li>
-        </ul>
+        <div class="proceso-grid">
+            <div class="proceso-step animate-on-scroll">
+                <div class="paso-numero">01</div>
+                <div class="paso-icon">
+                    <i class="fa-solid fa-comments"></i>
+                </div>
+                <h3 class="paso-title">Consulta Inicial</h3>
+                <p class="paso-desc">Escuchamos tu visión y objetivos para entender exactamente lo que necesitas.</p>
+            </div>
+            <div class="proceso-step animate-on-scroll">
+                <div class="paso-numero">02</div>
+                <div class="paso-icon">
+                    <i class="fa-solid fa-clipboard-list"></i>
+                </div>
+                <h3 class="paso-title">Planificación</h3>
+                <p class="paso-desc">Diseñamos una propuesta creativa con cronograma y presupuesto transparente.</p>
+            </div>
+            <div class="proceso-step animate-on-scroll">
+                <div class="paso-numero">03</div>
+                <div class="paso-icon">
+                    <i class="fa-solid fa-clapperboard"></i>
+                </div>
+                <h3 class="paso-title">Producción</h3>
+                <p class="paso-desc">Ejecutamos el proyecto con equipo profesional y atención a cada detalle.</p>
+            </div>
+            <div class="proceso-step animate-on-scroll">
+                <div class="paso-numero">04</div>
+                <div class="paso-icon">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <h3 class="paso-title">Entrega Final</h3>
+                <p class="paso-desc">Recibes el producto terminado con revisiones incluidas hasta tu total satisfacción.</p>
+            </div>
+        </div>
+
+        <!-- Garantías de confianza -->
+        <div class="garantias-grid">
+            <div class="garantia-item animate-on-scroll">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Calidad Garantizada</span>
+            </div>
+            <div class="garantia-item animate-on-scroll">
+                <i class="fa-solid fa-clock"></i>
+                <span>Entrega Puntual</span>
+            </div>
+            <div class="garantia-item animate-on-scroll">
+                <i class="fa-solid fa-rotate"></i>
+                <span>Revisiones Incluidas</span>
+            </div>
+            <div class="garantia-item animate-on-scroll">
+                <i class="fa-solid fa-handshake"></i>
+                <span>Trato Personalizado</span>
+            </div>
+        </div>
     </section>
 
-    <section class="section">
-        <div class="flex items-center gap-4 flex-col">
-            <i class="fa-solid fa-bullhorn"></i>
-            <h2 class="section_title">Marketing Digitales</h2>
+    <!-- Lo que nos diferencia -->
+    <section class="diferencia-section">
+        <div class="diferencia-bg">
+            <img src="./images/dos.jpg" alt="">
         </div>
-        <ul>
-            <li> <i class="fa-solid fa-hand-point-right"></i> Contenido en redes sociales</li>
-            <li> <i class="fa-solid fa-hand-point-right"></i> Marketing online</li>
-            <li> <i class="fa-solid fa-hand-point-right"></i> Gestión de redes sociales</li>
-            <li> <i class="fa-solid fa-hand-point-right"></i> Desarrollo web y aplicaciones</li>
-        </ul>
-    </section>
-
-    <footer class="bg-gray-200 flex justify-center items-center flex-col gap-4">
-        <div class="slider_contactanos">
-            <picture class="block w-full">
-                <img src="portada.jpg" alt="">
-            </picture>
-            <div class="box-text">
-                <div class="text">
-                    <h2 class="text-center font-bold"> ¡ Contactanos Ahora ! </h2>
-                    <a href="https://wa.me/59177509708" target="_blank">Contactanos</a>
+        <div class="diferencia-overlay"></div>
+        <div class="diferencia-content">
+            <h2 class="diferencia-title animate-on-scroll">Lo que nos <span class="gold">diferencia</span></h2>
+            <div class="diferencia-grid">
+                <div class="diferencia-item animate-on-scroll">
+                    <div class="diferencia-icon">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3>Creatividad sin Límites</h3>
+                    <p>Cada proyecto es único. Nos apasiona encontrar el ángulo perfecto para contar tu historia.</p>
+                </div>
+                <div class="diferencia-item animate-on-scroll">
+                    <div class="diferencia-icon">
+                        <i class="fa-solid fa-drone"></i>
+                    </div>
+                    <h3>Equipo Profesional</h3>
+                    <p>Trabajamos con drones, cámaras y tecnología de última generación para resultados cinematográficos.</p>
+                </div>
+                <div class="diferencia-item animate-on-scroll">
+                    <div class="diferencia-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <h3>Dedicación Total</h3>
+                    <p>Nos involucramos en cada detalle de tu proyecto como si fuera nuestro. Tu satisfacción es nuestra prioridad.</p>
                 </div>
             </div>
         </div>
-        <div class="py-2">
-            <ul class="flex gap-4">
+    </section>
+
+    <!-- Footer / CTA -->
+    <footer class="footer">
+        <div class="footer-cta">
+            <div class="footer-cta-bg">
+                <img src="portada.jpg" alt="">
+            </div>
+            <div class="footer-cta-overlay"></div>
+            <div class="footer-cta-content animate-on-scroll">
+                <h2 class="footer-cta-title">¿Listo para crear algo <span class="gold">extraordinario</span>?</h2>
+                <p class="footer-cta-text">Hablemos de tu próximo proyecto. Estamos a un mensaje de distancia.</p>
+                <a href="https://wa.me/59178442014" target="_blank" class="whatsapp-btn">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Contáctanos por WhatsApp
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <ul class="footer-social">
                 <li>
-                    <a href="https://www.facebook.com/share/1XgUSaqstB/" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-facebook"></i>
+                    <a href="https://www.facebook.com/share/1XgUSaqstB/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/capcha_drones?igsh=enF0ajQ1ajJ3eXBw" target="_blank"
-                        rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/capcha_drones?igsh=enF0ajQ1ajJ3eXBw" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.youtube.com/@capcha_drones7" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.youtube.com/@capcha_drones7" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                         <i class="fa-brands fa-youtube"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.tiktok.com/@capcha_drones" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.tiktok.com/@capcha_drones" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
                         <i class="fa-brands fa-tiktok"></i>
                     </a>
                 </li>
             </ul>
+            <p class="footer-copy">&copy; 2026 Capcha Films. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <!-- Chat Widget WhatsApp -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <div class="chat-avatar">
+                        <i class="fa-solid fa-compact-disc"></i>
+                    </div>
+                    <div>
+                        <span class="chat-name">Capcha Films</span>
+                        <span class="chat-status">En línea</span>
+                    </div>
+                </div>
+                <button class="chat-close" id="chatClose">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="chat-body">
+                <div class="chat-bubble incoming">
+                    <p>¡Hola! 👋 Bienvenido a <strong>Capcha Films</strong>.</p>
+                </div>
+                <div class="chat-bubble incoming">
+                    <p>Escríbenos tu consulta y te responderemos por WhatsApp lo antes posible.</p>
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" class="chat-input" id="chatInput" placeholder="Escribe tu mensaje..." maxlength="500">
+                <button class="chat-send" id="chatSend">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+        <button class="chat-toggle" id="chatToggle">
+            <i class="fa-brands fa-whatsapp chat-toggle-icon-open"></i>
+            <i class="fa-solid fa-xmark chat-toggle-icon-close"></i>
+        </button>
+    </div>
+
     <script src="main.js"></script>
 </body>
 
