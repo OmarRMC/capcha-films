@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://capcha-films.web.app/sitemap.xml

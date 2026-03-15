@@ -750,6 +750,100 @@ img {
 }
 
 /* ========================================
+   UBICACIÓN
+   ======================================== */
+
+.ubicacion-section {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ubicacion-container {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 40px;
+    align-items: stretch;
+}
+
+.ubicacion-info {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.ubicacion-detalle {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.ubicacion-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--blue-deep), rgba(26, 58, 92, 0.3));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: var(--gold);
+    flex-shrink: 0;
+}
+
+.ubicacion-detalle h3 {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 4px;
+}
+
+.ubicacion-detalle p {
+    font-size: 14px;
+    color: var(--white-60);
+    line-height: 1.7;
+}
+
+.ubicacion-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 32px;
+    background: var(--gold);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 50px;
+    transition: all var(--transition);
+    align-self: flex-start;
+    margin-top: 8px;
+}
+
+.ubicacion-btn:hover {
+    background: var(--gold-light);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0, 102, 255, 0.3);
+}
+
+.ubicacion-mapa {
+    border-radius: 16px;
+    overflow: hidden;
+    min-height: 380px;
+    border: 1px solid var(--white-05);
+}
+
+.ubicacion-mapa iframe {
+    display: block;
+    filter: brightness(0.85) contrast(1.1) saturate(0.3);
+    transition: filter var(--transition);
+}
+
+.ubicacion-mapa:hover iframe {
+    filter: brightness(0.9) contrast(1.05) saturate(0.6);
+}
+
+/* ========================================
    CHAT WIDGET WHATSAPP
    ======================================== */
 
@@ -1033,6 +1127,10 @@ img {
     .garantias-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .ubicacion-container {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 /* ========================================
@@ -1107,6 +1205,22 @@ img {
 
     .diferencia-item {
         padding: 30px 20px;
+    }
+
+    .ubicacion-section {
+        padding: 60px 16px;
+    }
+
+    .ubicacion-container {
+        grid-template-columns: 1fr;
+    }
+
+    .ubicacion-mapa {
+        min-height: 300px;
+    }
+
+    .ubicacion-btn {
+        align-self: center;
     }
 
     .footer-cta {
