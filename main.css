@@ -5,9 +5,9 @@
 :root {
     --bg-dark: #050508;
     --bg-card: #0c0c14;
-    --gold: #0066FF;
-    --gold-light: #3388FF;
-    --blue-deep: #001a40;
+    --gold: #F5A623;
+    --gold-light: #FFC145;
+    --blue-deep: #2b1400;
     --white: #ffffff;
     --white-80: rgba(255, 255, 255, 0.85);
     --white-60: rgba(255, 255, 255, 0.6);
@@ -87,33 +87,11 @@ img {
 .navbar-logo {
     display: flex;
     align-items: center;
-    gap: 12px;
 }
 
-.navbar-logo i {
-    font-size: 40px;
-    color: var(--gold);
-}
-
-.navbar-logo-text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.2;
-}
-
-.logo-top {
-    font-family: var(--font-display);
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--white);
-    letter-spacing: 1px;
-}
-
-.logo-bottom {
-    font-size: 13px;
-    color: var(--white-60);
-    letter-spacing: 2px;
-    text-transform: uppercase;
+.navbar-logo-img {
+    height: 48px;
+    width: auto;
 }
 
 .navbar-social {
@@ -136,9 +114,9 @@ img {
 
 .navbar-social a:hover {
     color: var(--gold);
-    border-color: rgba(0, 102, 255, 0.4);
+    border-color: rgba(245, 166, 35, 0.4);
     transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(0, 102, 255, 0.15);
+    box-shadow: 0 2px 8px rgba(245, 166, 35, 0.15);
 }
 
 /* ========================================
@@ -236,13 +214,13 @@ img {
     border-radius: 50px;
     letter-spacing: 0.5px;
     transition: all var(--transition);
-    box-shadow: 0 0 30px rgba(0, 102, 255, 0.3);
+    box-shadow: 0 0 30px rgba(245, 166, 35, 0.3);
 }
 
 .hero-cta:hover {
     background: var(--gold-light);
     transform: translateY(-1px);
-    box-shadow: 0 0 25px rgba(0, 102, 255, 0.25);
+    box-shadow: 0 0 25px rgba(245, 166, 35, 0.25);
 }
 
 /* ========================================
@@ -341,16 +319,16 @@ img {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--blue-deep), rgba(26, 58, 92, 0.3));
+    background: linear-gradient(135deg, var(--blue-deep), rgba(43, 20, 0, 0.3));
     font-size: 28px;
     color: var(--gold);
     transition: all var(--transition);
 }
 
 .servicio-card:hover .card-icon {
-    background: linear-gradient(135deg, rgba(0, 102, 255, 0.25), rgba(51, 136, 255, 0.15));
+    background: linear-gradient(135deg, rgba(245, 166, 35, 0.25), rgba(255, 193, 69, 0.15));
     color: var(--gold-light);
-    box-shadow: 0 0 15px rgba(0, 102, 255, 0.15);
+    box-shadow: 0 0 15px rgba(245, 166, 35, 0.15);
 }
 
 .card-title {
@@ -448,16 +426,16 @@ img {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--blue-deep), rgba(26, 58, 92, 0.3));
+    background: linear-gradient(135deg, var(--blue-deep), rgba(43, 20, 0, 0.3));
     font-size: 28px;
     color: var(--gold);
     transition: all var(--transition);
 }
 
 .paquete-card:hover .paquete-icon {
-    background: linear-gradient(135deg, rgba(0, 102, 255, 0.25), rgba(51, 136, 255, 0.15));
+    background: linear-gradient(135deg, rgba(245, 166, 35, 0.25), rgba(255, 193, 69, 0.15));
     color: var(--gold-light);
-    box-shadow: 0 0 15px rgba(0, 102, 255, 0.15);
+    box-shadow: 0 0 15px rgba(245, 166, 35, 0.15);
 }
 
 .paquete-title {
@@ -492,7 +470,7 @@ img {
 .paquete-btn:hover {
     background: var(--gold-light);
     transform: translateY(-2px);
-    box-shadow: 0 4px 20px rgba(0, 102, 255, 0.3);
+    box-shadow: 0 4px 20px rgba(245, 166, 35, 0.3);
 }
 
 .paquete-btn-secondary {
@@ -505,13 +483,13 @@ img {
     font-weight: 500;
     font-size: 14px;
     border-radius: 50px;
-    border: 1px solid rgba(0, 102, 255, 0.3);
+    border: 1px solid rgba(245, 166, 35, 0.3);
     transition: all var(--transition);
 }
 
 .paquete-btn-secondary:hover {
     border-color: var(--gold);
-    background: rgba(0, 102, 255, 0.08);
+    background: rgba(245, 166, 35, 0.08);
     transform: translateY(-1px);
 }
 
@@ -549,7 +527,7 @@ img {
     top: 10px;
     right: 20px;
     font-size: 2.5rem;
-    color: rgba(0, 102, 255, 0.1);
+    color: rgba(245, 166, 35, 0.1);
 }
 
 .paso-icon {
@@ -560,15 +538,15 @@ img {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--blue-deep), rgba(26, 58, 92, 0.3));
+    background: linear-gradient(135deg, var(--blue-deep), rgba(43, 20, 0, 0.3));
     font-size: 24px;
     color: var(--gold);
     transition: all var(--transition);
 }
 
 .proceso-step:hover .paso-icon {
-    background: linear-gradient(135deg, rgba(0, 102, 255, 0.25), rgba(51, 136, 255, 0.15));
-    box-shadow: 0 0 20px rgba(0, 102, 255, 0.15);
+    background: linear-gradient(135deg, rgba(245, 166, 35, 0.25), rgba(255, 193, 69, 0.15));
+    box-shadow: 0 0 20px rgba(245, 166, 35, 0.15);
     transform: translateY(-2px);
 }
 
@@ -608,7 +586,7 @@ img {
 }
 
 .garantia-item:hover {
-    border-color: rgba(0, 102, 255, 0.3);
+    border-color: rgba(245, 166, 35, 0.3);
     transform: translateY(-2px);
 }
 
@@ -701,7 +679,7 @@ img {
 }
 
 .diferencia-item:hover {
-    border-color: rgba(0, 102, 255, 0.3);
+    border-color: rgba(245, 166, 35, 0.3);
     transform: translateY(-4px);
     background: rgba(255, 255, 255, 0.05);
 }
@@ -714,15 +692,15 @@ img {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--blue-deep), rgba(26, 58, 92, 0.3));
+    background: linear-gradient(135deg, var(--blue-deep), rgba(43, 20, 0, 0.3));
     font-size: 26px;
     color: var(--gold);
     transition: all var(--transition);
 }
 
 .diferencia-item:hover .diferencia-icon {
-    background: linear-gradient(135deg, rgba(0, 102, 255, 0.25), rgba(51, 136, 255, 0.15));
-    box-shadow: 0 0 20px rgba(0, 102, 255, 0.2);
+    background: linear-gradient(135deg, rgba(245, 166, 35, 0.25), rgba(255, 193, 69, 0.15));
+    box-shadow: 0 0 20px rgba(245, 166, 35, 0.2);
 }
 
 .diferencia-item h3 {
@@ -773,7 +751,7 @@ img {
     background: linear-gradient(
         to bottom,
         rgba(10, 10, 10, 0.8),
-        rgba(26, 58, 92, 0.6),
+        rgba(43, 20, 0, 0.6),
         rgba(10, 10, 10, 0.9)
     );
 }
@@ -863,9 +841,9 @@ img {
 
 .footer-social a:hover {
     color: var(--gold);
-    border-color: rgba(0, 102, 255, 0.4);
+    border-color: rgba(245, 166, 35, 0.4);
     transform: translateY(-1px);
-    box-shadow: 0 2px 10px rgba(0, 102, 255, 0.15);
+    box-shadow: 0 2px 10px rgba(245, 166, 35, 0.15);
 }
 
 .footer-copy {
@@ -907,7 +885,7 @@ img {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--blue-deep), rgba(26, 58, 92, 0.3));
+    background: linear-gradient(135deg, var(--blue-deep), rgba(43, 20, 0, 0.3));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -948,7 +926,7 @@ img {
 .ubicacion-btn:hover {
     background: var(--gold-light);
     transform: translateY(-2px);
-    box-shadow: 0 4px 20px rgba(0, 102, 255, 0.3);
+    box-shadow: 0 4px 20px rgba(245, 166, 35, 0.3);
 }
 
 .ubicacion-mapa {
@@ -1272,16 +1250,8 @@ img {
         height: 70px;
     }
 
-    .navbar-logo i {
-        font-size: 28px;
-    }
-
-    .logo-top {
-        font-size: 15px;
-    }
-
-    .logo-bottom {
-        font-size: 11px;
+    .navbar-logo-img {
+        height: 36px;
     }
 
     .navbar-social a {
