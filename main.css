@@ -1383,11 +1383,11 @@ img {
     aspect-ratio: 1 / 1;
     margin: 0 auto 18px;
     border-radius: 50%;
-    border: 2px solid rgba(245, 166, 35, 0.35);
+    border: 2px solid rgba(255, 255, 255, 0.15);
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(160deg, var(--blue-deep), var(--bg-dark));
+    background: var(--equipo-color, var(--gold));
     box-shadow: 0 0 0 6px var(--white-05);
     transition: border-color 0.4s ease, box-shadow 0.4s ease;
 }
@@ -1414,7 +1414,7 @@ img {
     font-size: clamp(2rem, 3.5vw, 2.8rem);
     font-weight: 700;
     letter-spacing: 2px;
-    color: var(--gold);
+    color: var(--white);
 }
 
 .equipo-icono {
@@ -1423,13 +1423,13 @@ img {
     bottom: 2%;
     width: 36px;
     height: 36px;
-    border: 2px solid var(--bg-card);
+    border: 2px solid var(--equipo-color, var(--gold));
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: #3a2306;
-    color: var(--gold-light);
+    background: var(--bg-card);
+    color: var(--white);
     font-size: 15px;
 }
 
